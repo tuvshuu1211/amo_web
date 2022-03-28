@@ -1,0 +1,26 @@
+.about{
+    min-height: 100vh;
+    &-content{
+        position: relative;
+        width: 70%;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+        padding: 8rem 0;
+    }
+    .circleAnim{
+        position: absolute;
+        right: 0;
+        top: 60%;
+        transform: scale(.7);
+        opacity: .33;
+    }
+}
+
+.about-block{
+    padding: 8rem 0;
+    .about-image{
+        height: 100%;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,11 @@
+
+.grid-columns{
+    display: grid;
+    gap: 3rem;
+}
+
+@each $size in $gridamounts{
+    .grid-#{$size}{
+        grid-template-columns: repeat(#{$size}, 1fr);
+    }
+  }

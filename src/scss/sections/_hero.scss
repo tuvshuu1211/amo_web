@@ -1,0 +1,77 @@
+.hero-section{
+    height: 100vh;
+}
+.hero__content{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+        color: white;
+        gap: 2rem;
+    }
+    .inner-content{
+        flex-grow: 1;
+        font-size: 1.25rem;
+        text-align: right;
+        font-family: 'Poppins';
+        .contact-information{
+            p{
+                margin: 0;
+            }
+            .social-links{
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                gap: 2rem;
+                a{
+                    color: $primary;
+                    text-decoration: none;
+                }
+            }
+        }
+        .line{
+            width: 100%;
+            height: 3px;
+            background: $primary;
+            transform-origin: right top;
+        }
+        h2.hero-text{
+            margin: 0;
+            font-size: 5rem;
+            font-weight: 200;
+            color: $primary;
+            font-family: 'Newyork' !important;
+        }
+    }
+}
+
+.header-background{
+    background: $dark;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($dark, $alpha: .7);
+        z-index: 1;
+    }
+    video{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}

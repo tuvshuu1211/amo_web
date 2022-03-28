@@ -1,0 +1,33 @@
+.section-quality{
+    h2.section-heading{
+        text-align: center;
+        color: $primary;
+        font-size: 10rem;
+        font-family: 'Poppins';
+        font-weight: 400;
+        line-height: 10rem;
+        margin: 0;
+        margin-bottom: 10rem;
+        span{
+            margin: 0;
+            display: block;
+            font-family: 'Newyork';
+        }
+    }
+    .quality-image{
+        min-height: 80vh;
+        width: 100%;
+    }
+    .block-content{
+        width: 70%;
+        margin-left: auto;
+    }
+}
+
+.material-content{
+    margin-top: 10vh;
+    .material-image{
+        height: 80vh;
+        width: 100%;
+    }
+}

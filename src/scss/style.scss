@@ -1,0 +1,34 @@
+
+
+// Variables
+@import './variable/variable';
+
+//Mixins 
+@import './mixins/mixin';
+
+// Font
+@import './font/font';
+//Animation
+@import './animation/animation';
+
+// Base styles
+@import './base/base';
+@import './base/grid';
+@import './base/swiper';
+@import './base/utils';
+
+// Section styles
+@import './sections/hero';
+@import './sections/about';
+@import './sections/quality';
+@import './sections/contact';
+@import './sections/footer';
+
+// Components
+@import './components/navbar';
+@import './components/block-content';
+@import './components/btn';
+
+//Locomotive scroll
+@import './locomotive';
+

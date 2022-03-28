@@ -1,0 +1,19 @@
+{
+  "name": "amosign-web",
+  "version": "1.0.0",
+  "description": "Mongolian based furniture website",
+  "main": "unrelated.js",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Enkhtuvshin",
+  "license": "MIT",
+  "dependencies": {
+    "locomotive-scroll": "^4.1.4",
+    "swiper": "^8.0.7"
+  }
+}

@@ -1,0 +1,133 @@
+#mainNav{
+    position: fixed;
+    z-index: 2020;
+    font-family: 'Poppins';
+    width: 100%;
+    top: 0;
+    left: 0;
+    .navbar{
+        padding: $spacer + 0.5 0;
+        &-items{
+            width: 100%;
+            justify-content: end;
+            display: flex;
+            gap: $spacer * 4;
+            align-items: center;
+            .navbar-link{
+                color: white;
+                text-decoration: none;
+                font-size: $spacer * 1.125;
+                
+            }
+        }
+        &-toggle{
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            pointer-events: all;
+            transition: transform .3s ease-out;
+            span{
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background-color: $primary;
+                pointer-events: none;
+                transition: top .3s ease-out .5s,
+                            transform .3s ease-out;
+                &:nth-child(1){
+                    top: 0;
+                    transform: rotate(0);
+                }
+                &:nth-child(2){
+                    top: 50%;
+                    transform: scaleX(1);
+                }
+                &:nth-child(3){
+                    top: 100%;
+                    transform: rotate(0);
+                }
+            }
+            &.active{
+                justify-content: center;
+                span{
+                    transition: top .3s ease-out,
+                                transform .3s ease-out .5s;
+                    &:nth-child(1){
+                        top: 50%;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        transform: scaleX(0);
+                    }
+                    &:nth-child(3){
+                        top: 50%;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+#amoMenu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    
+    // background
+    background-image: url('../images/dark-wood.jpg');
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: lighten($dark, $amount: 10%);
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    pointer-events: none;
+    &.active{
+        pointer-events: all;
+        opacity: 1;
+    }
+    .amoMenu-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        .menu-lists{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                padding: 1rem 0;
+                a{
+                    font-size: 3.472vw;
+                    line-height: 3.472vw;
+                    transition: all .3s ease-out;
+                    &:hover{
+                        color: white;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        .amo-address{
+            font-family: 'Poppins';
+            font-size: 1.125rem;
+            color: $primary;
+            margin-top: 5vh;
+            font-weight: 200;
+        }
+    }
+}
