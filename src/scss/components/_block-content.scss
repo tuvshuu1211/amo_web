@@ -7,7 +7,7 @@
     }
     &-large{
         font-family: 'Poppins';
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 200;
         color: rgba($color: #fff, $alpha: .6);
         letter-spacing: 2px;
@@ -15,6 +15,11 @@
             mix-blend-mode: normal;
             color: $primary;
             font-family: 'Newyork';
+        }
+    }
+    @media(min-width: $breakpoint-lg){
+        &-large{
+            font-size: 2.5rem;
         }
     }
 }

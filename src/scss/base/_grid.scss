@@ -1,7 +1,11 @@
 
 .grid-columns{
-    display: grid;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    @media(min-width: $breakpoint-sm){
+        display: grid;
+        gap: 3rem;
+    }
 }
 
 @each $size in $gridamounts{

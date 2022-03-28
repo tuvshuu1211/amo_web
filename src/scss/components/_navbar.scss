@@ -112,12 +112,16 @@
             li{
                 padding: 1rem 0;
                 a{
-                    font-size: 3.472vw;
-                    line-height: 3.472vw;
+                    font-size: 10vw;
+                    line-height: 10vw;
                     transition: all .3s ease-out;
                     &:hover{
                         color: white;
                         letter-spacing: 2px;
+                    }
+                    @media(min-width: $breakpoint-md){
+                        font-size: 3.472vw;
+                        line-height: 3.472vw;
                     }
                 }
             }

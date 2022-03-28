@@ -2,11 +2,11 @@
     min-height: 100vh;
     &-content{
         position: relative;
-        width: 70%;
+        width: 100%;
         color: white;
         text-align: center;
         margin: 0 auto;
-        padding: 8rem 0;
+        padding: 0;
     }
     .circleAnim{
         position: absolute;
@@ -15,6 +15,15 @@
         transform: scale(.7);
         opacity: .33;
     }
+    @media(min-width: $breakpoint-lg){
+        .circleAnim{
+            bottom: 0;
+        }
+        &-content{
+            padding: 8rem 0;
+            width: 70%;
+        }
+    }
 }
 
 .about-block{
@@ -22,5 +31,6 @@
     .about-image{
         height: 100%;
         background-size: cover;
+        min-height: 250px;
     }
 }
