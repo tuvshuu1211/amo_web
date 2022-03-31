@@ -44,6 +44,7 @@
     .material-image{
         height: 40vh;
         width: 100%;
+        background-position: center center;
     }
     @media(min-width: $breakpoint-md){
         .material-image{

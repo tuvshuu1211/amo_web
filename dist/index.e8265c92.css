@@ -1122,6 +1122,7 @@ section {
 .material-content .material-image {
   height: 40vh;
   width: 100%;
+  background-position: center center;
 }
 @media (min-width: 768px) {
   .material-content .material-image {
