@@ -994,7 +994,7 @@ section {
   flex-grow: 1;
   font-size: 1.25rem;
   text-align: right;
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
 }
 .hero__content .inner-content .contact-information p {
   margin: 0;
@@ -1084,7 +1084,7 @@ section {
   font-size: 4rem;
   line-height: 4rem;
   margin-bottom: 10rem;
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -1149,7 +1149,7 @@ section {
   margin-top: 10vh;
 }
 footer {
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   font-size: 1.25rem;
 }
 footer .footer-wrapper {
@@ -1168,7 +1168,7 @@ footer .social ul li {
 #mainNav {
   position: fixed;
   z-index: 2020;
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   width: 100%;
   top: 0;
   left: 0;
@@ -1292,7 +1292,7 @@ footer .social ul li {
   }
 }
 #amoMenu .amoMenu-wrapper .amo-address {
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   font-size: 1.125rem;
   color: #FEF6C6;
   margin-top: 5vh;
@@ -1301,15 +1301,15 @@ footer .social ul li {
 .block-content {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
 }
 .block-content h2 {
   font-weight: 400;
 }
 .block-content-large {
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 2px;
 }
@@ -1324,7 +1324,7 @@ footer .social ul li {
   }
 }
 .btn {
-  font-family: "Poppins";
+  font-family: "Poppins", "Montserrat", sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
   color: inherit;

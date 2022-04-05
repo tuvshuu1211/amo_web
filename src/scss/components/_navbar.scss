@@ -1,7 +1,7 @@
 #mainNav{
     position: fixed;
     z-index: 2020;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Montserrat', sans-serif;
     width: 100%;
     top: 0;
     left: 0;
@@ -127,7 +127,7 @@
             }
         }
         .amo-address{
-            font-family: 'Poppins';
+            font-family: 'Poppins', 'Montserrat', sans-serif;
             font-size: 1.125rem;
             color: $primary;
             margin-top: 5vh;
