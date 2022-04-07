@@ -2,7 +2,7 @@
   font-family: "Newyork";
   font-style: normal;
   font-weight: 500;
-  src: local("Newyork"), url("FontsFree-Net-NewYork.b5fee114.ttf") format("ttf");
+  src: local("Newyork"), url("NewYork.032ac424.woff") format("woff");
 }
 @keyframes spin {
   0% {
