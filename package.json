@@ -7,8 +7,8 @@
     "main": false
   },
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html"
   },
   "author": "Enkhtuvshin",
   "license": "MIT",
