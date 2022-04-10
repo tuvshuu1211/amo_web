@@ -1,25 +1,29 @@
 .block-content{
     font-size: 1.25rem;
     color: rgba($color: #fff, $alpha: .6);
-    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-family: 'Poppins', 'Montserrat', sans-serif, ;
     h2{
         font-weight: 400;
     }
     &-large{
         font-family: 'Poppins', 'Montserrat', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 300;
         color: rgba($color: #fff, $alpha: .6);
         letter-spacing: 2px;
         span{
             mix-blend-mode: normal;
             color: $primary;
-            font-family: 'Newyork';
+            font-size: 1.975rem;
+            font-family: 'Newyork', 'Cormorant Garamond', sans-serif;
         }
     }
     @media(min-width: $breakpoint-lg){
         &-large{
-            font-size: 2.5rem;
+            font-size: 2.25rem;
+            span{
+                font-size: 2.975rem;
+            }
         }
     }
 }

@@ -8,7 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+    smooth: true,
+    lerp: 0.08,
+    resetNativeScroll: true
 });
 
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -143,6 +145,9 @@ const swiper = new Swiper('.amosign-huge-slider', {
     spaceBetween: 0,
     centeredSlides: true,
     speed: 700,
+    autoplay: {
+      delay: 1000,
+    },
     slidesPerView: 'auto',
     loop: true,
     grabCursor: true,

@@ -26,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Newyork";
+  font-family: "Newyork", "Cormorant Garamond", sans-serif;
   background: #19191B;
 }
 a {
@@ -136,8 +136,8 @@ section {
   grid-template-columns: repeat(12, 1fr);
 }
 .amosign-huge-slider {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
 }
 .amosign-huge-slider .gallery-image {
   width: 100%;
@@ -1044,7 +1044,8 @@ section {
   width: 100%;
 }
 .about {
-  min-height: 100vh;
+  padding-bottom: 0;
+  min-height: auto !important;
 }
 .about-content {
   position: relative;
@@ -1063,7 +1064,7 @@ section {
 }
 @media (min-width: 1024px) {
   .about .circleAnim {
-    bottom: 0;
+    top: 25%;
   }
   .about-content {
     padding: 8rem 0;
@@ -1071,21 +1072,21 @@ section {
   }
 }
 .about-block {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 .about-block .about-image {
   height: 100%;
   background-size: cover;
-  min-height: 250px;
+  min-height: 500px;
 }
 .section-quality h2.section-heading {
   text-align: center;
   color: #FEF6C6;
   font-size: 4rem;
   line-height: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 15vh !important;
   font-family: "Poppins", "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 .section-quality h2.section-heading span {
@@ -1097,6 +1098,7 @@ section {
   min-height: 40vh;
   width: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .section-quality .block-content {
   width: 100%;
@@ -1135,7 +1137,8 @@ section {
 @media (min-width: 768px) {
   .material-content .material-image {
     height: 80vh;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .contact-wrapper {
@@ -1316,7 +1319,7 @@ footer .social ul li {
 }
 .block-content-large {
   font-family: "Poppins", "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 2px;
@@ -1324,11 +1327,15 @@ footer .social ul li {
 .block-content-large span {
   mix-blend-mode: normal;
   color: #FEF6C6;
-  font-family: "Newyork";
+  font-size: 1.975rem;
+  font-family: "Newyork", "Cormorant Garamond", sans-serif;
 }
 @media (min-width: 1024px) {
   .block-content-large {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+  }
+  .block-content-large span {
+    font-size: 2.975rem;
   }
 }
 .btn {
