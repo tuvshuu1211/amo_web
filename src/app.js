@@ -36,9 +36,16 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
     : "fixed"*/
 });
 
+const navbar = document.querySelector('#mainNav')
 locoScroll.on('scroll', (args) => {
     const st = Math.floor(args.scroll.y / 10)
     gsap.to('.circleAnim__wrapper', {rotate: st, ease: 'linear'})
+
+    if(args.scroll.y > window.innerHeight/2){
+      navbar.classList.add('scrolled')
+    }else{
+      navbar.classList.remove('scrolled')
+    }
 });
 
 gsap.set('.hero__content .logo-wrapper', { rotate: 45,opacity:0 }, 0)

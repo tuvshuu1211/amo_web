@@ -8,6 +8,8 @@
         font-family: 'Poppins', 'Montserrat', sans-serif;
         font-weight: 300;
         margin: 0;
+        position: relative;
+        z-index: 1;
         span{
             margin: 0;
             display: block;
@@ -34,8 +36,8 @@
             margin-left: auto;
         }
         h2.section-heading{
-            font-size: 10rem;
-            line-height: 10rem;
+            font-size: 8rem;
+            line-height: 8rem;
         }
     }
 }
@@ -47,6 +49,7 @@
         width: 100%;
         background-position: center center;
         position: relative;
+        z-index: 0;
         &::after{
             content: '';
             position: absolute;

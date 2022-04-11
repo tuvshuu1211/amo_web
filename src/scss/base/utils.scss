@@ -5,6 +5,12 @@
     }
   }
 
+  @each $display in $displays{
+    .display-#{$display}-none{
+        grid-template-columns: repeat(#{$display}, 1fr);
+    }
+  }
+
 @each $size in $units{
     .h-#{$size}vh{
         height: #{$size}vh !important;
@@ -41,4 +47,11 @@
 
 .text-center{
     text-align: center;
+}
+
+.sm-none{
+    display: none;
+    @media(min-width: $breakpoint-md){
+        display: block;
+    }
 }
